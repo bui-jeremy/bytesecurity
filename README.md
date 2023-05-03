@@ -5,24 +5,20 @@
 </p>
 
 <p align="center"> 
-Get motivational messages from AI. 
+Get access to a range of cybersecurity tips and techniques to enhance the security of your devices through the use of cutting-edge GPT API, insightful news articles, and informative videos. Stay updated on the latest security trends and strengthen your digital security posture.
 </p>
 
 ## Introduction
 
-It's frustrating trying to meet your goal sometimes isn't it? Grandma AI can help you in those situations by providing excellent motivational messages just for you!
-
-<div align="center">
-  <video src="https://user-images.githubusercontent.com/55467050/230217769-987d8383-6f92-4a4d-b83f-aea7046488c7.mp4" />
-</div>
-                                                                                                                  
+Trying to remain in the loop in today's evolving cyber threats? Byte Security provides informational articles and remediation tips powered by GPT API.
+                                                                                                    
 ## Features
 
-A few of the things you can do with Grandma AI:
+A few things you can do with Byte Security
 
-* Get AI generated messages via e-mail or text 
-* Create & edit goals 
-* Choose message intensity 
+* Get AI generated tips to remediate recent security vulnerabilities
+* Read daily-released security news articles
+* Watch variety of informational vulnerability videos from YouTube
 * Login & Signup with Gmail
 
 <p align="center">
@@ -35,4 +31,4 @@ A few of the things you can do with Grandma AI:
 
 ## Feedback
 
-Feel free to send us feedback on [Grandma AI](mailto:minseok30086@gmail.com) or [file an issue](https://github.com/mslee300/grandma-ai/issues). Feature requests are always welcome. If you wish to contribute, please help yourself!
+Feel free to send us feedback on [Byte Security](mailto:jeremybui2002@gmail.com). Feature requests are always welcome. If you wish to contribute, please help yourself!
