@@ -12,7 +12,7 @@ def get_news():
        'sortBy=publishedAt&'
        'pageSize=7&'
        'page=1&'
-       'apiKey=7af51366b8a545fdb5ed2228b98c57b1')
+       'apiKey=')
     response=requests.get(url)
     data = response.json()
     articles = data['articles']
