@@ -1,6 +1,6 @@
 <h1 align="center"> Byte Security </h1> <br>
 <p align="center">
-<img width="300" alt="Byte Security Default Image" src="static/img/home.png">
+<img width="300" alt="Byte Security Default Image" src="https://github.com/bui-jeremy/bytesecurity/blob/main/static/img/home.jpg">
   </a>
 </p>
 
