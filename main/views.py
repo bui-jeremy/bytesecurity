@@ -55,7 +55,7 @@ def breachbites(request):
             'q=vulnerability&'
             'sortBy=publishedAt&'
             'pageSize=1&'
-            'apiKey=7af51366b8a545fdb5ed2228b98c57b1')
+            'apiKey=')
             response=requests.get(url)
             data = response.json()
             articles = data['articles']
@@ -78,7 +78,7 @@ def breachbites(request):
             'sortBy=publishedAt&'
             'pageSize=1&'
             'page=1&'
-            'apiKey=7af51366b8a545fdb5ed2228b98c57b1')
+            'apiKey=')
         response=requests.get(url)
         data = response.json()
         articles = data['articles']
