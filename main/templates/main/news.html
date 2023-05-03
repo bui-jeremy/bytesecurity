@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+
+{% block title %} News {% endblock %}
+
+<body>
+{% block content %}
+
+<h1>News &#x1F4F0;</h1>
+<hr>
+
+{% for i in articles %}
+
+<div class="card rounded shadow-lg m-2" style="width: 25rem;">
+    <img src="{{ i.urlToImage }}" class="card-img-top" alt="...">
+    <div class="card-body">
+    <p class="card-text">{{ i.author }}</p>
+    <h5 class="card-title">{{ i.title }}</h5>
+    <p class="card-text">{{ i.source.name }}</p>
+    <p class="card-text">{{ i.description }}</p>
+    <hr>
+    <small>Date: {{ i.publishedAt}}</small>
+    <a href="{{ i.url }}" target="_blank" class="btn btn-success m-1">Read More</a>
+    </div>
+</div>
+
+{% endfor %}
+
+
+<footer class="relative-footer container-fluid bg-dark text-white">
+    <div class="container">
+      <p>&copy; 2023 Byte Security </p>
+    </div>
+</footer>   
+
+{% endblock %}
+</body>

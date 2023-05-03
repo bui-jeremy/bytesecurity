@@ -1,0 +1,22 @@
+{% extends "main/base.html" %}
+
+{% block title %}Register{% endblock %}
+{% load crispy_forms_tags %}
+{% load socialaccount %}
+{% load static %}
+
+{% block content %}
+    <h1>Register</h1>
+    <br>
+    <a href="{% provider_login_url 'google' %}?next=/">
+        <button class="google-button">
+            <img src="{%static 'img\google.png' %}"   width="18px;">&nbsp;&nbsp;Continue with Google
+        </button>
+    </a>
+    <br>
+    <form method="post" class='form-group' action="{% url 'register' %}">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button type ="submit" class="btn btn-success">Register</button>
+    </form>
+{% endblock %}

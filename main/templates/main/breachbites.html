@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<head> 
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    {% block title %} Breach Bites {% endblock %}
+</head>
+
+<body> 
+    {% block content %}
+    <h1>Breach Bites &#128274;</h1>
+    <hr>
+    {% load static %}
+    {% if response %}
+    <h2> Daily Suggested Article!</h2>
+    {% for i in articles %}
+    <div class="card rounded shadow-lg m-2" style="width: 25rem;">
+        <img src="{{ i.urlToImage }}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text">{{ i.author }}</p>
+        <h5 class="card-title">{{ i.title }}</h5>
+        <p class="card-title">{{ i.source.name }}</p>
+        <p class="card-text">{{ i.description }}</p>
+        <hr>
+        <small>date: {{ i.publishedAt }}</small>
+        <a href="{{ i.url }}" target="_blank" class="btn btn-success m-1">Read More</a>
+        </div>
+    </div>
+    {% endfor %}
+    <br>
+    <hr>
+    {% if response %}
+    <p> Advised steps to remediate article courtesy of GPT API: {{ response }}</p>
+    {% endif %}
+    {% else %}
+        <img class="generate_img" src="{%static 'img\generate_thumbnail.png' %}"  width="300px" height="300px">
+        <form action="" method="post">
+            {% csrf_token %}
+            <button  type="submit" class="myButton" name="gen_daily" value="gen_daily">&nbsp;Generate Daily Bite!</button>
+        </form>
+        <p  class="generate_txt">Byte Security's platform leverages the <em>Open AI API</em> and <em>News API</em> to curate a daily article related to cybersecurity and provides a comprehensive list of measures to remediate the vulnerabilities highlighted in the article. Kindly click on the "<strong>Generate Daily Bite</strong>" button to commence your intellectual expedition.</p>
+    {% endif %}
+    <footer class="relative-footer container-fluid bg-dark text-white">
+        <div class="container">
+          <p>&copy; 2023 Byte Security</p>
+        </div>
+    </footer>     
+    </div>
+    {% endblock %}
+</body>

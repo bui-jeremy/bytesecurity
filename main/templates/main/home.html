@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'main/base.html' %}
+{% load static %}
+<html lang="en">
+<body>
+    {% block content %}
+        <h1>Home &#x1F3AD;</h1>
+        <hr>
+        <p>Keep up-to-date with the latest <em><strong>cybersecurity vulnerability news</strong></em> and access <em><strong>daily remediation suggestions</strong></em> using our powerful combination of <em><strong>News API, YouTube API, and OpenAI GPT-4</strong></em> technology. At <em><strong>Byte Security</strong></em>, we're dedicated to delivering the most advanced <em><strong>cybersecurity solutions</strong></em> to help you stay safe and secure online.</p>        
+        <img class="home_img" src="{%static 'img\home.jpg' %}"  width="300px" height="300px">
+        <footer class="absolute-footer container-fluid bg-dark text-white">
+            <div class="container">
+            <p>&copy; 2023 Byte Security </p>
+            </div>
+        </footer>   
+    {% endblock %}
+    </body>
+</html>
