@@ -22,12 +22,8 @@ A few things you can do with Byte Security
 * Login & Signup with Gmail
 
 <p align="center">
-  <img src = "https://user-images.githubusercontent.com/55467050/230259685-b45c0140-8099-4cf2-8b73-9bd6b106dda7.png" width=700> 
+  <img src = "https://github.com/bui-jeremy/bytesecurity/blob/main/static/img/github_img.png" width=700> 
 </p> 
-
-<p align="center"> 
-  <img src = "https://user-images.githubusercontent.com/55467050/230259839-9c638ead-5039-428f-8fcb-803af45b126c.png" width=700> 
-</p>
 
 ## Feedback
 
